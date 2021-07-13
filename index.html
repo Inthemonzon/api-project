@@ -10,22 +10,19 @@
     <h1 class= 'center'>Animal Crossing Fish Enyclopedia</h1>
     <script src="script.js"></script>
     <div id="container"></div> 
-      <img id="fish-logo" src="https://static.wikia.nocookie.net/animalcrossing/images/5/50/NH-Icon-tuna.png/revision/latest/scale-to-width-down/64?cb=20200401003129" alt="" class="center">
+      <img id="fish-logo" src="https://static.wikia.nocookie.net/animalcrossing/images/5/50/NH-Icon-tuna.png/revision/latest/scale-to-width-down/64?cb=20200401003129" alt="" class="center-image">
 
       <div class="margin flex">
         <h4 class='center'>Find Fish  </h4>
         <form id='fish-form' class="padding margin border-round border-grey">
-          <input type="text" name="name" placeholder="fish's name" value="" />
-          <input type="text" name="time" placeholder="fish's time" value="" />
-          <input type="text" name="price" placeholder="fish's price" value="" />
-          <input type="text" name="shadow" placeholder="fish's shadow" value="" />
-          <input type="submit" value="Submit" />
+          <input type="text" name="name" id="fishName" placeholder="fish's name" value="" />
+          <button type="button" id="fishSearch">Search</button>
         </form>
       </div>
 
 
       <div class="margin flex">
-        <h4 class= 'center'>North Hemisphere Fish</h4>
+        <h4 class= 'center'> New Horizons Fish</h4>
         <table class='margin' border="1">
           <thead class='green'>
             <tr class='padding'>

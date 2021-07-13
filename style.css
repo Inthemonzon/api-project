@@ -1,5 +1,6 @@
 body {
-    background: green;
+    background: rgba(0, 0, 170, 0.8);
+    color: white;
   }
   
   .main {
@@ -20,6 +21,12 @@ body {
   .center {
     text-align: center;
   }
+
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .padding {
     padding: 10px;
@@ -30,7 +37,7 @@ body {
   }
   
   .green {
-    background-color: #66c2ff;
+    background-color: #000000;
   }
 
   h1, h2, h3, h4 {
