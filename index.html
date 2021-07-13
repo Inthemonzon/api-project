@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>1st Project</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script> 
+    <h1 class= 'center'>Animal Crossing Fish Enyclopedia</h1>
+    <script src="script.js"></script>
+    <div id="container"></div> 
+      <img id="fish-logo" src="https://static.wikia.nocookie.net/animalcrossing/images/5/50/NH-Icon-tuna.png/revision/latest/scale-to-width-down/64?cb=20200401003129" alt="" class="center">
+
+      <div class="margin flex">
+        <h4 class='center'>Find Fish  </h4>
+        <form id='fish-form' class="padding margin border-round border-grey">
+          <input type="text" name="name" placeholder="fish's name" value="" />
+          <input type="text" name="time" placeholder="fish's time" value="" />
+          <input type="text" name="price" placeholder="fish's price" value="" />
+          <input type="text" name="shadow" placeholder="fish's shadow" value="" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+
+      <div class="margin flex">
+        <h4 class= 'center'>North Hemisphere Fish</h4>
+        <table class='margin' border="1">
+          <thead class='green'>
+            <tr class='padding'>
+              <th class='padding center'>Name</th>
+              <th class='padding center'>Time</th>
+              <th class='padding center'>Price</th>
+              <th class='padding center'>Shadow</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div> 
+    </div>
   </body>
 </html> 
