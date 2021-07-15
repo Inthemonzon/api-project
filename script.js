@@ -40,17 +40,21 @@ const renderFish = (fish) => {
     let tableDataShadow = document.createElement('td')
     tableDataShadow.textContent = fish.shadow
 
-    let locationButton = document.createElement('button')
-    locationButton.textContent = 'View Location'
-    let location = fish.availability.location
-    addLocationListener(locationButton, location)
+    let tableDataCatch = document.createElement('td')
 
-    tableRow.append(tableDataName, tableDataTime, tableDataPrice, tableDataShadow, locationButton)
+    let catchButton = document.createElement('button')
+    catchButton.textContent = 'Catch Fish'
+    let catchFish = fish['catch-phrase']
+    addCatchListener(catchButton, catchFish, tableDataCatch)
+
+    tableRow.append(tableDataName, tableDataTime, tableDataPrice, tableDataShadow, tableDataCatch, catchButton)
     tableBody.append(tableRow)
 }
 
-const addLocationListener = (locationButton, location) => {
-    locationButton.addEventListener('click', (e) => {
-       window.alert(location)
+const addCatchListener = (catchButton, catchFish, tableDataCatch) => {
+    catchButton.addEventListener('click', (e) => {
+    tableDataCatch.textContent = catchFish
     })
 }
+//point before changes!!!!!
+//comment above was just so i could have a safe "undo until this disappears" point just in case my code didnt work 
